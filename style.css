@@ -1,0 +1,56 @@
+:root {
+  --paper: #f6f1e7;
+  --surface: #fffdf8;
+  --ink: #1e1b22;
+  --sub: #6f6976;
+  --accent: #e8432e;
+  --mint: #bfe8d6;
+  --rule: rgba(30, 27, 34, 0.14);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--mint);
+  background-image: linear-gradient(rgba(30, 90, 70, 0.07) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(30, 90, 70, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--ink);
+  font: 16px/1.7 "Pretendard", -apple-system, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang TC", "Noto Sans KR", sans-serif;
+  padding: 32px 16px 64px;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 2px solid var(--rule);
+  border-radius: 20px;
+  padding: 40px clamp(20px, 5vw, 56px);
+  box-shadow: 0 10px 0 rgba(30, 27, 34, 0.06);
+}
+h1, h2, h3 { font-family: "Gaegu", "Pretendard", sans-serif; line-height: 1.25; }
+h1 { font-size: 2.6rem; margin: 0 0 4px; }
+h2 { font-size: 1.7rem; margin: 40px 0 8px; padding-top: 24px; border-top: 2px dashed var(--rule); }
+h3 { font-size: 1.3rem; margin: 24px 0 4px; }
+.lead { color: var(--sub); margin: 0 0 24px; }
+nav.langs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+nav.langs a, .button {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  background: var(--surface);
+}
+nav.langs a:hover, .button:hover { background: var(--paper); }
+a { color: var(--accent); }
+.contact {
+  background: var(--paper);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-weight: 700;
+}
+footer { max-width: 720px; margin: 24px auto 0; text-align: center; color: var(--sub); font-size: 0.9rem; }
+ul { padding-left: 1.2em; }
