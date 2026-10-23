@@ -54,3 +54,5 @@ a { color: var(--accent); }
 }
 footer { max-width: 720px; margin: 24px auto 0; text-align: center; color: var(--sub); font-size: 0.9rem; }
 ul { padding-left: 1.2em; }
+footer p { margin: 6px 0; }
+footer .biz { font-size: 0.8rem; line-height: 1.7; word-break: keep-all; }
